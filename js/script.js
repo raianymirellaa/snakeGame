@@ -12,7 +12,7 @@ const speed = document.querySelector(".speed--value");
 const audio = new Audio("../assets/audio.mp3");
 
 //definir velocidade
-let velocidade = 220;
+let velocidade = 150;
 
 //definir tamanho padrão
 const size = 30;
@@ -155,7 +155,7 @@ const checkEat = () => {
     food.y = y;
     food.color = randomColor();
 
-    velocidade = velocidade > 95 ? velocidade * (1 - 0.01 * snake.length) : 80;
+   // velocidade = velocidade > 95 ? velocidade * (1 - 0.01 * snake.length) : 80;
   }
 };
 
